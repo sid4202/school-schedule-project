@@ -1,0 +1,142 @@
+body {
+  height: 100%;
+  background: rgb(134, 233, 140);
+  background: -webkit-linear-gradient(299deg, rgb(134, 233, 140) 0%, rgb(255, 255, 255) 25.476190476190474%, rgb(255, 255, 255) 68.33333333333333%, rgba(66, 220, 74, 0.86) 100%) rgb(255, 255, 255);
+  background:    -moz-linear-gradient(299deg, rgb(134, 233, 140) 0%, rgb(255, 255, 255) 25.476190476190474%, rgb(255, 255, 255) 68.33333333333333%, rgba(66, 220, 74, 0.86) 100%) rgb(255, 255, 255);
+  background:      -o-linear-gradient(299deg, rgb(134, 233, 140) 0%, rgb(255, 255, 255) 25.476190476190474%, rgb(255, 255, 255) 68.33333333333333%, rgba(66, 220, 74, 0.86) 100%) rgb(255, 255, 255);
+  background:     -ms-linear-gradient(299deg, rgb(134, 233, 140) 0%, rgb(255, 255, 255) 25.476190476190474%, rgb(255, 255, 255) 68.33333333333333%, rgba(66, 220, 74, 0.86) 100%) rgb(255, 255, 255);
+  background:         linear-gradient(151deg, rgb(134, 233, 140) 0%, rgb(255, 255, 255) 25.476190476190474%, rgb(255, 255, 255) 68.33333333333333%, rgba(66, 220, 74, 0.86) 100%) rgb(255, 255, 255);
+  font: 400 1.25em/1.38 'Trebuchet MS';
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  float: left;
+  z-index: 1;
+  width: 9.4166666666%;
+  height: 29px;
+  margin: 51px 0 0 2.98438%;
+}
+
+.element {
+  position: relative;
+  float: left;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+._button {
+  display: block;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+._input {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 11;
+  width: 9.8333333333%;
+  height: 22px;
+  margin: -38px 0 0 20.33073%;
+  padding: 0 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-size: 0.65em;
+  color: rgb(0, 0, 0);
+}
+
+.element-1 {
+  clear: both;
+  z-index: 2;
+  width: 11.5%;
+  height: 44px;
+  margin: -49px 0 0 19.33073%;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-2 {
+  z-index: 4;
+  width: 11.25%;
+  height: 44px;
+  margin: -49px 0 0 33.16667%;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-3 {
+  z-index: 5;
+  width: 11.0833333333%;
+  height: 44px;
+  margin: -49px 0 0 46.67318%;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-4 {
+  z-index: 8;
+  width: 15.4127604166%;
+  height: 31px;
+  margin: 100px 0 0 11.51823%;
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-5 {
+  z-index: 7;
+  width: 15.4127604166%;
+  height: 31px;
+  margin-top: 100px;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-6 {
+  z-index: 9;
+  width: 15.4127604166%;
+  height: 31px;
+  margin-top: 100px;
+}
+
+.element-7 {
+  z-index: 6;
+  width: 15.4127604166%;
+  height: 31px;
+  margin-top: 100px;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+}
+
+.element-8 {
+  z-index: 10;
+  width: 15.4127604166%;
+  height: 31px;
+  margin-top: 100px;
+}
+
+._button-1 {
+  z-index: 0;
+  width: 3.8333333333%;
+  height: 49px;
+  margin: 69px 0 0 12.08073%;
+  background: url('../images/%D0%B4%D0%BE%D0%BC.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0);
+}
+
+._button-2 {
+  z-index: 3;
+  width: 24.4166666666%;
+  height: 52px;
+  margin: -57px 0 0 64.16406%;
+  border-radius: 11px;
+  background-color: rgb(66, 220, 74);
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+
+body {
+  height: 100%;
+  background: rgb(7, 0, 179);
+  background: -webkit-linear-gradient(330deg, rgb(7, 0, 179) 0%, rgb(255, 255, 255) 28.095238095238095%, rgb(255, 255, 255) 40.95238095238095%, rgb(255, 255, 255) 66.66666666666666%, rgb(0, 207, 11) 100%) rgb(255, 255, 255);
+  background:    -moz-linear-gradient(330deg, rgb(7, 0, 179) 0%, rgb(255, 255, 255) 28.095238095238095%, rgb(255, 255, 255) 40.95238095238095%, rgb(255, 255, 255) 66.66666666666666%, rgb(0, 207, 11) 100%) rgb(255, 255, 255);
+  background:      -o-linear-gradient(330deg, rgb(7, 0, 179) 0%, rgb(255, 255, 255) 28.095238095238095%, rgb(255, 255, 255) 40.95238095238095%, rgb(255, 255, 255) 66.66666666666666%, rgb(0, 207, 11) 100%) rgb(255, 255, 255);
+  background:     -ms-linear-gradient(330deg, rgb(7, 0, 179) 0%, rgb(255, 255, 255) 28.095238095238095%, rgb(255, 255, 255) 40.95238095238095%, rgb(255, 255, 255) 66.66666666666666%, rgb(0, 207, 11) 100%) rgb(255, 255, 255);
+  background:         linear-gradient(120deg, rgb(7, 0, 179) 0%, rgb(255, 255, 255) 28.095238095238095%, rgb(255, 255, 255) 40.95238095238095%, rgb(255, 255, 255) 66.66666666666666%, rgb(0, 207, 11) 100%) rgb(255, 255, 255);
+  font: 600 48px 'Roboto Flex';
+  color: rgb(0, 0, 0);
+}
+
+.element {
+  float: left;
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.image {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 81px;
+  height: auto;
+  margin: 13px 0 0 46.91667%;
+  overflow: hidden;
+}
+
+.text {
+  float: left;
+  text-align: center;
+}
+
+.text-1 p {
+  margin-bottom: 1em;
+}
+
+._button {
+  display: block;
+  position: relative;
+  float: left;
+  height: 48px;
+  margin-top: 19px;
+  border-radius: 11px;
+  font-size: 0.55em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  -ms-transition: 0.7s;
+  transition: 0.7s;
+}
+
+._button:hover {
+  border-color: rgba(51, 51, 51, 0.54);
+  font-size: 0.625em;
+  color: rgb(255, 255, 255);
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  -ms-transition: 0.7s;
+  transition: 0.7s;
+}
+
+._button:active {
+  border-color: rgba(51, 51, 51, 0.54);
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.element-1 {
+  position: relative;
+  clear: both;
+  z-index: 7;
+  width: 4.9166666666%;
+  height: 56px;
+  margin: -227px 0 0 70.7474%;
+  background-image: url('../images/будильник.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.element-2 {
+  position: relative;
+  z-index: 8;
+  width: 6.1666666666%;
+  height: 56px;
+  margin: -56px 0 0 26.75%;
+  background-image: url('../images/календарь.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.element-3 {
+  clear: both;
+  width: 63.7499999999%;
+  height: 11px;
+  margin: 29px 0 0 18.5%;
+  border-top: 1px solid rgb(128, 128, 128);
+}
+
+.text-1 {
+  position: relative;
+  clear: both;
+  z-index: 5;
+  width: 58.1666666666%;
+  min-height: 201px;
+  margin-left: 20.58073%;
+  padding-top: 33px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 0.6;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.text-2 {
+  width: 35.5%;
+  min-height: 83px;
+  margin: 18px 0 0 32.24349%;
+  font-family: Arial;
+  font-size: 0.475em;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.text-3 {
+  clear: both;
+  width: 42.0833333333%;
+  min-height: 14px;
+  margin-left: 29.83073%;
+  font-size: 0.35em;
+  color: rgb(0, 0, 0);
+}
+
+._button-1 {
+  clear: both;
+  z-index: 2;
+  width: 17.75%;
+  margin-left: 31.41667%;
+  background-color: rgba(96, 92, 207, 0.96);
+}
+
+._button-1:hover {
+  background-color: rgb(83, 78, 202);
+}
+
+._button-1:active {
+  background-color: rgb(58, 53, 176);
+}
+
+._button-2 {
+  z-index: 6;
+  width: 17.9166666666%;
+  margin-left: 2.7474%;
+  background-color: rgb(66, 220, 74);
+}
+
+._button-2:hover {
+  background-color: rgb(23, 216, 33);
+}
+
+._button-2:active {
+  background-color: rgba(18, 170, 26, 0.92);
+}
