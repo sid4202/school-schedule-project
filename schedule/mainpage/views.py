@@ -11,4 +11,9 @@ def studentpage(request):
     return render(request, 'mainpage/studentpage.html')
 
 
+def adminlogin(request):
+    return render(request, 'mainpage/adminlogin.html')
 
+
+def adminpage(request):
+    return render(request, 'mainpage/adminpage.html')
