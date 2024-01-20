@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
 
 
 def index(request):
@@ -15,5 +16,20 @@ def adminlogin(request):
     return render(request, 'mainpage/adminlogin.html')
 
 
+def table(request):
+    block = request.POST.get("block", "Undefined")
+    grade = request.POST.get("grade", "Undefined")
+    letter = request.POST.get("letter", "Undefined")
+    combo = grade + letter
+    a = ['dasd', 'adasd', 'dadsw']
+    c = ""
+    for b in a:
+        c += '<div class="element element-14"></div>\n<p class="text">' + b + '</p>'
+    return HttpResponse(c)
+
+
 def adminpage(request):
-    return render(request, 'mainpage/adminpage.html')
+    key = request.POST.get("key", "Undefined")
+    if (key == "123"):
+        return render(request, 'mainpage/adminpage.html')
+    return HttpResponseRedirect("/")
