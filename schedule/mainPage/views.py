@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from mainpage import ex
+from . import ex
 
 def index(request):
     # return HttpResponse("<h4>МАКСИМ ГОМОСЕК!!</h4>")
