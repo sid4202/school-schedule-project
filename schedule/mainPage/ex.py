@@ -2,7 +2,7 @@ import openpyxl
 
 
 class FromSheet:
-    def init(self, day_of_week, class_name, lesson_number):
+    def __init__(self, day_of_week, class_name, lesson_number):
         self.day_of_week = day_of_week
         self.class_name = class_name
         self.lesson_number = lesson_number
@@ -20,7 +20,7 @@ class FromSheet:
         else:
             lesson_y = 1 + self.lesson_number + self.day_of_week * 8
             lesson_name = sheet[lesson_y][self.lesson_x()].value
-        return teacher_name, lesson_name
+        return [teacher_name, lesson_name, self.day_of_week, self.class_name, self.lesson_number]
 
     def lesson_x(self):
         sheet, sheet2 = pyxl()

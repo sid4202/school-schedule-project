@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-
+from . import ex
 
 def index(request):
     # return HttpResponse("<h4>МАКСИМ ГОМОСЕК!!</h4>")
@@ -21,10 +21,11 @@ def table(request):
     grade = request.POST.get("grade", "Undefined")
     letter = request.POST.get("letter", "Undefined")
     combo = grade + letter
-    a = ['dasd', 'adasd', 'dadsw']
+    from_sheet = ex.FromSheet(0, combo, 1)
+    a = from_sheet.get_everything()
     c = ""
     for b in a:
-        c += '<div class="element element-14"></div>\n<p class="text">' + b + '</p>'
+        c += '<div class="element element-14"></div>\n<p class="text">' + str(b) + '</p>'
     return HttpResponse(c)
 
 
