@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>sing-in</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/sing-in-grid.css">
+  <link rel="stylesheet" href="css/sing-in.css">
+</head>
+<body class="body page-sing-in clearfix">
+  <button onClick="window.location='/';" class="_button _button-1"></button>
+  <p class="text">&nbsp;Пароль</p>
+  <form method="post" action="/adminpage">
+    {% csrf_token %}
+    <input class="_input" name="key" type="password">
+    <input type="submit" value="Войти"/>
+  </form>
+</body>
+</html>

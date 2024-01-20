@@ -78,7 +78,7 @@ body {
   width: 4.9166666666%;
   height: 56px;
   margin: -227px 0 0 70.7474%;
-  background-image: url('../images/будильник.png');
+  background-image: url('../images/alarmclock_icon.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -90,7 +90,7 @@ body {
   width: 6.1666666666%;
   height: 56px;
   margin: -56px 0 0 26.75%;
-  background-image: url('../images/календарь.png');
+  background-image: url('../images/calendar_icon.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
