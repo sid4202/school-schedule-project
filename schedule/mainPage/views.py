@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-from mainpage import ex
+from . import ex
+
 
 def index(request):
     # return HttpResponse("<h4>МАКСИМ ГОМОСЕК!!</h4>")
@@ -16,16 +17,27 @@ def adminlogin(request):
     return render(request, 'mainpage/adminlogin.html')
 
 
-def table(request):
+def table(request, c=""):
     block = request.POST.get("block", "Undefined")
     grade = request.POST.get("grade", "Undefined")
     letter = request.POST.get("letter", "Undefined")
-    combo = grade + letter
-    from_sheet = ex.FromSheet(0, combo, 1)
-    a = from_sheet.get_everything()
-    c = ""
-    for b in a:
-        c += '<div class="element element-14"></div>\n<p class="text">' + str(b) + '</p>'
+    for i in range(5):
+        for j in range(8):
+            from_sheet = ex.FromSheet(i, grade + letter, j+1)
+            a = from_sheet.get_everything()
+            day = ""
+            if (a[2] == 0):
+                day = "Понедельник"
+            elif (a[2] == 1):
+                day = "Вторник"
+            elif (a[2] == 2):
+                day = "Среда"
+            elif (a[2] == 3):
+                day = "Четверг"
+            elif (a[2] == 4):
+                day = "Пятница"
+            c += '<div class="element element-14"></div>\n<p class="text">' + a[1] + " | " + a[0] + " | " + str(day) + " | Номер урока: " + str(a[4]) + '</p>'
+        c+= '<h4>.</h4>'
     return HttpResponse(c)
 
 

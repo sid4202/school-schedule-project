@@ -1,5 +1,5 @@
 from django.urls import path
-from mainPage import views
+from . import views
 
 urlpatterns = [
     path('table', views.table),
