@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from . import views
 
 urlpatterns = [
-    path('', include('mainpage.urls'))
+    path('', include('mainPage.urls'))
 ]
