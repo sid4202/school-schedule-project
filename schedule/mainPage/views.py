@@ -21,11 +21,13 @@ def table(request):
     grade = request.POST.get("grade", "Undefined")
     letter = request.POST.get("letter", "Undefined")
     combo = grade + letter
-    from_sheet = ex.FromSheet(0, combo, 1)
-    a = from_sheet.get_everything()
-    c = ""
-    for b in a:
-        c += '<div class="element element-14"></div>\n<p class="text">' + str(b) + '</p>'
+    for i in range(6):
+        for j in range(8):
+            from_sheet = ex.FromSheet(i, combo, j)
+            a = from_sheet.get_everything()
+            c = ""
+            for b in a:
+                c += '<div class="element element-14"></div>\n<p class="text">' + str(b) + '</p>'
     return HttpResponse(c)
 
 

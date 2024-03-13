@@ -7,6 +7,7 @@ class FromSheet:
         self.class_name = class_name
         self.lesson_number = lesson_number
 
+
     def get_everything(self):
         sheet, sheet2 = pyxl()
         if self.teacher_y() is None:
